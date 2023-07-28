@@ -33,6 +33,7 @@ local PlayerName = "LocalPlayer"
     task.wait(.1)
     for al, v in pairs(workspace.PlayerModels:GetChildren()) do
     if v:FindFirstChild("Owner") then
+    if v.Owner.Value == Plr then
     if v:FindFirstChild("Type") then
     if v.Type.Value == "Blueprint" then
     if v:FindFirstChild("MainCFrame") then
@@ -42,6 +43,7 @@ local PlayerName = "LocalPlayer"
     end;
     v.Type.Value = "Structure"
     Remote:FireServer(v.ItemName.Value, position, game:GetService'Players'.LocalPlayer, Build, v, true)
+    end
     end
     end
     end

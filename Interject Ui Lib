@@ -1752,7 +1752,7 @@ do
 					CanvasPosition = Vector2.new(0, 28),
 					CanvasSize = UDim2.new(0, 0, 0, 120),
 					ZIndex = 2,
-					 = 7,
+					ScrollBarThickness = 7,
 					ScrollBarImageColor3 = themes.DarkContrast
 				}, {
 					utility:Create("UIListLayout", {

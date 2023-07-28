@@ -33,6 +33,7 @@
     task.wait(.1)
     for al, v in pairs(workspace.PlayerModels:GetChildren()) do
     if v:FindFirstChild("Owner") then
+    if v.Owner.Value == Plr then
     if v:FindFirstChild("Type") then
     if v.Type.Value == "Blueprint" then
     if v:FindFirstChild("MainCFrame") then
@@ -46,7 +47,8 @@
     end
     end
     end
-    end   
+    end
+    end
     
     wait(2.810714285714286)SetBp("Birch")Sbp('Wedge9_Thin',Tag*Ang(1.5707963705062866, 0, -0) + Vec(-90, 17.60002899169922, -26.899993896484375), Plr)    
     Sbp('Wedge9_Thin',Tag*Ang(1.5707963705062866, 0, -0) + Vec(-90, 17.60002899169922, 18.0999755859375), Plr)    

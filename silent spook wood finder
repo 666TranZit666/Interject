@@ -1,10 +1,3 @@
-queue_on_teleport([[
-	repeat
-	task.wait()
-	until game:IsLoaded()
-    print(1)
-	loadstring(game:HttpGet"https://raw.githubusercontent.com/666TranZit666/Interject/main/silent%20spook%20wood%20finder")()
-]])
 local Tree
 local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
 
@@ -37,5 +30,5 @@ repeat
 
 until Tree["Owner"].Value == game.Players.LocalPlayer
 
-game.ReplicatedStorage.Notices.SendUserNotice:Fire("Claimed Spooky Tree")
+game.ReplicatedStorage.Notices.SendUserNotice:Fire("Claimed "..Tree.TreeClass.Value.." Tree")
 end

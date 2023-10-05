@@ -2,7 +2,7 @@ queue_on_teleport([[
 	repeat
 	task.wait()
 	until game:IsLoaded()
-	loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/666TranZit666/Interject/main/silent%20spook%20wood%20finder")()
 ]])
 
 
